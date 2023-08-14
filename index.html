@@ -14,16 +14,13 @@
         }
     </style>
     <script>
-        // 在页面加载后触发点击链接操作
         window.onload = function() {
-            var link = document.getElementById("serviceLink");
-            if (link) {
-                link.click();
-            }
+            var link = document.getElementById("autoLink");
+            link.click();
         };
     </script>
 </head>
 <body>
-    <a id="serviceLink" href="intent://tinypace/service/permission#Intent;scheme=scheme;package=com.tinypace.service;end" style="display:none;">点击跳转Service</a>
+    <a id="autoLink" href="intent://tinypace/service/permission#Intent;scheme=scheme;package=com.tinypace.service;end">点击跳转Service</a>
 </body>
 </html>
